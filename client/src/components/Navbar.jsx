@@ -20,6 +20,7 @@ import {
 } from "@mui/material";
 
 const Navbar = ({
+  user,
   isSidebarOpen,
   setIsSidebarOpen,
 }) => {
@@ -64,6 +65,11 @@ const Navbar = ({
           <IconButton>
               <SettingsOutlined sx={{ fontSize:"25px" }} />
           </IconButton>
+
+          <FlexBetween>
+
+          </FlexBetween>
+
         </FlexBetween>
       </Toolbar>
     </AppBar>
