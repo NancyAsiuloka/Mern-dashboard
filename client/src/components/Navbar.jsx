@@ -27,6 +27,11 @@ const Navbar = ({
   const dispatch = useDispatch();
   const theme = useTheme();
 
+  const [anchorEl, setAnchorEl] = useState(null);
+  const isOpen = Boolean(anchorEl);
+  const handleClick = (event) => setAnchorEl(event.currentTarget);
+  const handleClose= () => setAnchorEl(null);
+
   return (
     <AppBar
       sx={{
@@ -67,7 +72,9 @@ const Navbar = ({
           </IconButton>
 
           <FlexBetween>
+              <Button onClick={handleClick}>
 
+              </Button>
           </FlexBetween>
 
         </FlexBetween>
