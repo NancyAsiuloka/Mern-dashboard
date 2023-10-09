@@ -69,15 +69,14 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
 
           <FlexBetween>
             <Button
-              onClick = {handleClick}
+              onClick={handleClick},
               sx={{
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
                 textTransform: "none",
-                gap: "1rem",
-              }}
-              >
+                gap: "1rem"
+              }}>
               <Box
                 component="img"
                 alt="profile"
