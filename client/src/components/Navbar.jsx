@@ -68,8 +68,7 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
           </IconButton>
 
           <FlexBetween>
-            <Button
-              onClick={handleClick},
+            <Button onClick={handleClick},
               sx={{
                 display: "flex",
                 justifyContent: "space-between",
