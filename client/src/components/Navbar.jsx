@@ -30,7 +30,7 @@ const Navbar = ({
   const [anchorEl, setAnchorEl] = useState(null);
   const isOpen = Boolean(anchorEl);
   const handleClick = (event) => setAnchorEl(event.currentTarget);
-  const handleClose= () => setAnchorEl(null);
+  const handleClose = () => setAnchorEl(null);
 
   return (
     <AppBar
@@ -72,7 +72,15 @@ const Navbar = ({
           </IconButton>
 
           <FlexBetween>
-              <Button onClick={handleClick}>
+              <Button onClick={handleClick}
+              sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                textTransform: "none",
+                gap: "1rem"
+                }}
+                >
 
               </Button>
           </FlexBetween>
