@@ -68,7 +68,10 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
           </IconButton>
 
               <FlexBetween>
-                <Button>
+                <Button onClick={handleClick}
+                  sx={{
+
+                  }}>
 
                 </Button>
               </FlexBetween>
