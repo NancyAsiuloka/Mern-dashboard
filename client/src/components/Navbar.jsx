@@ -42,6 +42,7 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
       }}
     >
       <Toolbar sx={{ justifyContent: "space-between" }}>
+        {/* LEFT SIDE */}
         <FlexBetween>
           <IconButton onClick={() => setIsSidebarOpen(!isSidebarOpen)}>
             <MenuIcon />
@@ -108,10 +109,7 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
                 </Typography>
               </Box>
               <ArrowDropDownOutlined
-                sx={{
-                  color: theme.palette.secondary[300],
-                  fontSize: "25px",
-                }}
+                sx={{ color: theme.palette.secondary[300], fontSize: "25px" }}
               />
             </Button>
             <Menu
