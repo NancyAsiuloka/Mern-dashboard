@@ -99,11 +99,17 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
                   {user.name}
                 </Typography>
                 <Typography
-                  fontSize="0.8rem"
+                  fontSize="0.75rem"
                   sx={{ color: theme.palette.secondary[200] }}
                 >
                   {user.occupation}
                 </Typography>
+                <ArrowDropDownOutlined
+                  sx={{
+                    color: theme.palette.secondary[300],
+                    fontSize: "25px"
+                  }}
+                />
               </Box>
             </Button>
           </FlexBetween>
