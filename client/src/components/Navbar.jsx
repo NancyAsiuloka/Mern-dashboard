@@ -106,16 +106,21 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
                 >
                   {user.occupation}
                 </Typography>
-                </Box>
-                <ArrowDropDownOutlined
-                  sx={{
-                    color: theme.palette.secondary[300],
-                    fontSize: "25px"
-                  }}
-                />
+              </Box>
+              <ArrowDropDownOutlined
+                sx={{
+                  color: theme.palette.secondary[300],
+                  fontSize: "25px",
+                }}
+              />
             </Button>
-            <Menu ancholEl={anchorEl} open={isOpen} onClose={handleClose} anchorOrigin={{ vertical: "bottom", horizontal: "center"}}>
-                  <MenuItem  onClick={handleClose}>Log Out</MenuItem>
+            <Menu
+              anchorEl={anchorEl}
+              open={isOpen}
+              onClose={handleClose}
+              anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+            >
+              <MenuItem onClick={handleClose}>Log Out</MenuItem>
             </Menu>
           </FlexBetween>
         </FlexBetween>
