@@ -13,7 +13,7 @@ import salesRoutes from './routes/sales.js';
 // data imports
 import User from './models/User.js';
 import Product from './models/Product.js';
-import ProductStat from './models/productStat.js';
+import ProductStat from './models/ProductStat.js';
 import { dataUser } from './data/index.js';
 
 // CONFIGURATION
