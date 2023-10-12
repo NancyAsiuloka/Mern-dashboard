@@ -8,7 +8,8 @@ const ProductSchema = new mongoose.Schema(
         category: String,
         rating: Number,
         supply: Number,
-    }
+    },
+    {timestamps: true}
 );
 
 const Product = mongoose.model("Product", ProductSchema);
