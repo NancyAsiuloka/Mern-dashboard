@@ -2,12 +2,17 @@ import mongoose from "mongoose";
 
 const ProductStatSchema = new mongoose.Schema(
     {
-        name: String,
-        price: Number,
-        description: String,
-        category: String,
-        rating: Number,
-        supply: Number,
+        productId: String,
+        yearlySalesTotal: Number,
+        yearlyTotalSoldUnits: Number,
+        year: Number,
+        monthlyData: [
+            {
+                month: String,
+                totalSales: Number,
+                totalUnits: Number
+            }
+        ]
     },
     {timestamps: true}
 );
