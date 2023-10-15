@@ -16,7 +16,8 @@ export const getProducts = async (req, res) => {
                     stat,
                 }
             })
-        )
+        );
+
     } catch (error){
         res.status(404).json({message: error.message});
     }
