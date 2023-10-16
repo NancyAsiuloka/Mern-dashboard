@@ -11,7 +11,7 @@ import {
     useTheme,
     useMediaQuery,
   } from "@mui/material";
-  import Header from "components/Header";
+  import Header from '../../components/Header';
   import { useGetProductsQuery } from "state/api";
 
 const Products = () => {
