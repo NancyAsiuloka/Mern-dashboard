@@ -18,7 +18,7 @@ const Products = () => {
   return (
     <Box>
 
-        <Header title="PRODUCTS" subtitle="See your list of products."
+        <Header title="PRODUCTS" subtitle="See your list of products." />
     </Box>
   )
 }
