@@ -16,7 +16,9 @@ import {
 
 const Products = () => {
   return (
-    <div>Products</div>
+    <Box>
+
+    </Box>
   )
 }
 
