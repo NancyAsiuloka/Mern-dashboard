@@ -36,11 +36,11 @@ const Product = ({
       }}
     >
       <CardContent>
-        <Typography
-          sx={{ fontSize: 14}}
-          color={theme.palette.secondary[200]}
-          gutterBottom>
+        <Typography sx={{ fontSize: 14}} color={theme.palette.secondary[700]} gutterBottom>
             {category}
+        </Typography>
+        <Typography variant="h5" component="div">
+        {name}
         </Typography>
       </CardContent>
     </Card>
