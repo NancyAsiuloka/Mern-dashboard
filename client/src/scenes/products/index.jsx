@@ -22,7 +22,7 @@ const Product = ({
   rating,
   category,
   supply,
-  stat
+  stat,
 }) => {
   const theme = useTheme();
   const [isExpanded, setIsExpanded] = useState(false);
@@ -32,11 +32,11 @@ const Product = ({
       sx={{
         backgroundImage: "none",
         backgroundColor: theme.palette.background.alt,
-        borderRadius: "0.55rem"
+        borderRadius: "0.55rem",
       }}
     >
       <CardContent>
-      <Typography
+        <Typography
           sx={{ fontSize: 14 }}
           color={theme.palette.secondary[700]}
           gutterBottom
@@ -45,7 +45,8 @@ const Product = ({
         </Typography>
         <Typography variant="h5" component="div">
           {name}
-        </Typography><Typography sx={{ mb: "1.5rem" }} color={theme.palette.secondary[400]}>
+        </Typography>
+        <Typography sx={{ mb: "1.5rem" }} color={theme.palette.secondary[400]}>
           ${Number(price).toFixed(2)}
         </Typography>
         <Rating value={rating} readOnly />
@@ -81,14 +82,12 @@ const Product = ({
         </CardContent>
       </Collapse>
     </Card>
-  )
-}
+  );
+};
 
 const Products = () => {
   const { data, isLoading } = useGetProductsQuery();
   const isNonMobile = useMediaQuery("(min-width: 1008px)");
-
-  console.log("data", data);
 
   return (
     <Box m="1.5rem 2.5rem">
@@ -102,10 +101,10 @@ const Products = () => {
           rowGap="20px"
           columnGap="1.33%"
           sx={{
-            "& > div": { gridColumn: isNonMobile ? undefined : "span 4"}
+            "& > div": { gridColumn: isNonMobile ? undefined : "span 4" },
           }}
         >
-           {data.map(
+          {data.map(
             ({
               _id,
               name,
