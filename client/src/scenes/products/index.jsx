@@ -16,7 +16,8 @@ import {
 
 const Products = () => {
   const { data, isLoading } = useGetProductsQuery();
-  const isNonMobile
+  const isNonMobile = useMediaQuery("(min-width: 1008px)");
+
   console.log("data", data);
 
   return <Box>
