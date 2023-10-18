@@ -15,8 +15,12 @@ import {
   import { useGetProductsQuery } from "../../state/api";
 
 const Products = () => {
+  const { data, isLoading } = useGetProductsQuery();
+  const isNonMobile
+  console.log("data", data);
+
   return <Box>
-     {/* <Header title="PRODUCTS" subtitle="See your list of products." /> */}
+     <Header title="PRODUCTS" subtitle="See your list of products." />
     </Box>
 }
 
