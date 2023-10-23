@@ -47,10 +47,7 @@ const OverviewChart = ({ isDashboard = false, view }) => {
 
   if (!data || isLoading) return "Loading...";
 
-//   <ResponsiveLine
-//    ...
-//    layers={[ ..., DashedSolidLine] }
-// />
+
   return (
     <ResponsiveLine
       data={view === "sales" ? totalSalesLine : totalUnitsLine}
