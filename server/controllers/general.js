@@ -16,7 +16,41 @@ export const getDashboardStats = async (req, res) => {
         // hardcoded values
         const currentMonth = "October";
         const currentYear = 2023;
-        const currenDate = "2023-10-26";
+        const currentDay = "2023-10-28";
+
+        /*Recent Transaction */
+        const transactions = await Transaction.find().limit(50).sort({ createdOn: -1});
+
+        // Overall stats
+        const overallStat = await OverallStat.findOne({ year: currentYear});
+
+        const {
+            totalCustomers,
+            yearlyTotalSoldUnit,
+            yearlySalesTotal,
+            monthlyData,
+            salesByCategory
+        } = overallStat[0];
+
+        const thisMonthStats = overallStat[0].monthlyData.find(({ month}) => {
+            return month === currentMonth;
+        });
+
+        const todayStats = overallStat[0].dailyData.find(({ date}) => {
+            return date === currentDay;
+        });
+
+        res.status(200).json({
+            totalCustomers,
+            yearlyTotalSoldUnit,
+            yearlySalesTotal,
+            monthlyData,
+            salesByCategory,
+            thisMonthStats,
+            todayStats,
+            transactions,
+        })
+
     } catch (error){
         res.status(404).json({message: error.message});
     }
