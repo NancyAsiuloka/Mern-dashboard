@@ -123,7 +123,7 @@ const OverviewChart = ({ isDashboard = false, view }) => {
         legendPosition: "middle",
       }}
       enableGridX={false}
-      enableGridY={true}
+      enableGridY={false}
       pointSize={10}
       pointColor={{ theme: "background" }}
       pointBorderWidth={2}
