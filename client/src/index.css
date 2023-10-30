@@ -12,3 +12,8 @@
   ::-webkit-scrollbar {
     width: 10px
   }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #7a7f9d;
+  }
