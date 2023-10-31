@@ -211,7 +211,7 @@ const Sidebar = ({
                   fontSize="0.9rem"
                   sx={{ color: theme.palette.secondary[100] }}
                 >
-                  {user.name || "Nancy"}
+                  {user.name}
                 </Typography>
                 <Typography
                   fontSize="0.8rem"
