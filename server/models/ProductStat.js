@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+
 const ProductStatSchema = new mongoose.Schema(
     {
         productId: String,
