@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+
 const OverallStatSchema = new mongoose.Schema(
     {
         totalCustomers: Number,
