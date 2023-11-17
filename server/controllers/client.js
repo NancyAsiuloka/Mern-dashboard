@@ -93,4 +93,4 @@ export const getGeography = async (req, res) => {
     } catch (error) {
         res.status(404).json({message: error.message});
     }
-}
+};
