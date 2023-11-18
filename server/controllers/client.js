@@ -33,6 +33,7 @@ export const getCustomers = async (req, res) => {
     }
 };
 
+
 export const getTransactions = async (req, res) => {
     try {
         // sort should look like this: {"field": "userId": "sort": "descending"}
